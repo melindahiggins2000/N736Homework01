@@ -1,0 +1,90 @@
+---
+title: "Homework 01"
+author: "Melinda K. Higgins, PhD."
+date: "August 30, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## get the data
+
+```{r}
+library(tidyverse)
+library(readxl)
+
+dat <- read_excel("Dataset_02_fixq2.xlsx")
+```
+
+## do a basic summary
+
+```{r}
+summary(dat)
+```
+
+## get some plots
+
+```{r}
+dat %>%
+  ggplot() + 
+  geom_histogram(mapping = aes(x = Age), 
+                 binwidth = 10)
+
+dat %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = SES))
+```
+
+## add some factor level info - categorical and ordinal data
+
+```{r}
+library(forcats)
+
+sesLabels <- c("Low Income","Average Income", "High Income")
+sesLevels <- c(1,2,3)
+
+dat$SES <- factor(dat$SES, 
+                  levels = sesLevels, 
+                  labels = sesLabels)
+
+# redo bar plot
+
+dat %>%
+  ggplot() +
+  geom_bar(mapping = aes(x = SES))
+
+# another way to do the bar plot
+
+dat %>%
+  ggplot(aes(SES)) +
+  geom_bar()
+
+# add Likert coding for q1-q5
+
+qLevels <- c(1,2,3,4,5) 
+qLabels <- c("None of the time","a little of the time","some of the time",
+             "a lot of the time","all of the time") 
+
+# apply to all 5 questions - example for q1
+
+dat$q1 <- factor(dat$q1, 
+                 levels = qLevels, 
+                 labels = qLabels)
+
+summary(dat$q1)
+
+dat %>%
+  ggplot(aes(q1)) +
+  geom_bar()
+
+# remove NAs and replot
+
+dat %>%
+  subset(!is.na(q1)) %>%
+  ggplot(aes(q1)) +
+  geom_bar()
+
+```
+
