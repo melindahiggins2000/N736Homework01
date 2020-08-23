@@ -14,8 +14,8 @@
 
 * Also take a look at `Dataset_02_Codebook.docx` or `Dataset_02_Codebook.pdf` - this file contains the details on the various "codes" used for this dataset (e.g. you can use these details with `PROC FORMAT` in SAS or `factor()` function in R to label the numeric codes for the categorical and ordinal variables). These is NOT required to complete Homework 01, but it is always useful to make sure your data is labeled appropriately for graphing, tables summaries, etc. That said, there are notes in this "CODEBOOK" that will give you insight into the data - such as Weights should be in pounds; Heights are in decimal feet; and values of 9 and 99 are code indicators for missing.
 
-* For those of you using **`R`**, see the `hmwk01_getStarted.Rmd` or `hmwk01_getStarted.pdf` to see the R code and explanation to get started. You can even use this `*.Rmd` (Rmarkdown) file to get started on your homework report.
+* For those of you using **`R`**, see the [`hmwk01_getStarted.Rmd`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_getStarted.Rmd) or [`hmwk01_getStarted.pdf`](https://github.com/melindahiggins2000/N736Homework01/blob/master/hmwk01_getStarted.pdf) to see the R code and explanation to get started. You can even use this `*.Rmd` (Rmarkdown) file to get started on your homework report.
 
-* For those of you using **`SAS`**, see the `hmwk01_SASgetStarted.sas` SAS code program to get started working with the dataset.
+* For those of you using **`SAS`**, see the [`hmwk01_SASgetStarted.sas`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_SASgetStarted.sas) SAS code program to get started working with the dataset.
 
-* For those of you using **`SPSS`**, see the `hmwk01_SPSSgetStarted.sps` SAS code program to get started working with the dataset.
+* For those of you using **`SPSS`**, see the [`hmwk01_SPSSgetStarted.sps`](https://raw.githubusercontent.com/melindahiggins2000/N736Homework01/master/hmwk01_SPSSgetStarted.sps) SAS code program to get started working with the dataset.
