@@ -16,5 +16,6 @@
 
 * For those of you using **`R`**, see the `hmwk01_getStarted.Rmd` or `hmwk01_getStarted.pdf` to see the R code and explanation to get started. You can even use this `*.Rmd` (Rmarkdown) file to get started on your homework report.
 
-* For those of you using **`SAS`**, see the `hmwk01_getStarted.sas` SAS code program to get started working with the dataset.
+* For those of you using **`SAS`**, see the `hmwk01_SASgetStarted.sas` SAS code program to get started working with the dataset.
 
+* For those of you using **`SPSS`**, see the `hmwk01_SPSSgetStarted.sps` SAS code program to get started working with the dataset.
