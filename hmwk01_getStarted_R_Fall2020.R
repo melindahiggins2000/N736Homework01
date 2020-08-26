@@ -4,10 +4,12 @@
 # read in the dataset =====
 # load tidyverse and readxl packages
 library(tidyverse)
-library(readxl)
+#library(readxl)
+library(readr) # useful for CSV files
 
 # used read_excel() from the readxl package
-dat <- read_excel("Dataset_02_fixq2.xlsx")
+#dat <- read_excel("Dataset_02_fixq2.xlsx")
+dat <- read_csv("Dataset_02_fixq2.csv")
 
 # get basic summary stats =====
 # look for missing values NAs and 
@@ -15,6 +17,7 @@ dat <- read_excel("Dataset_02_fixq2.xlsx")
 # also compare mean and median
 summary(dat)
 
+library(ggplot2)
 # also look at distributions =====
 # use ggplot2 and geom_histogram()
 dat %>%
